@@ -1,9 +1,9 @@
-package timus;
+package timus.task_2012;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class task_2012 {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter out = new PrintWriter(System.out);
