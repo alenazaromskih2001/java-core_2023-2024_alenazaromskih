@@ -9,7 +9,7 @@ public class Example5 {
 
         System.out.println("Введите целое число больше 1000:");
         int num = in.nextInt();
-        int num1 = (num / 1000) % 10;
+        int num1 = (num / 1000);
 
         System.out.println("В числе " + num + " " + num1 + " тысяч");
 

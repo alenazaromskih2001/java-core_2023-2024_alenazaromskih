@@ -9,11 +9,10 @@ public class Example3 {
 
         System.out.println("Введите число:");
         int num = in.nextInt();
-        if (num % 4 == 0 && num < 10) {
-            System.out.println("Число " + num + " делится на 4 и меньше 10.");
+        if (num % 4 == 0 && num >= 10) {
+            System.out.println("Число " + num + " делится на 4 и больше 10.");
         } else {
-            System.out.println("Число " + num + " не удовлетворяет условиям." +
-                    " Веддите число меньше 10, которое делится на 4");
+            System.out.println("Число " + num + " не удовлетворяет условиям.");
         }
 
     }
