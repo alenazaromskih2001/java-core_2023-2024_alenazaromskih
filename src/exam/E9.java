@@ -1,4 +1,4 @@
-package lr3;
+package exam;
 
 import java.util.Scanner;
 
@@ -6,9 +6,8 @@ import java.util.Scanner;
 целых числа. Программа выводит все целые числа — начиная с наименьшего
 (из двух введенных чисел) и заканчивая наибольшим (из двух введенных
 чисел). Предложите разные версии программы (с использованием разных
-операторов цикла).
-*/
-public class Example4 {
+операторов цикла).*/
+public class E9 {
     public static void main(String[] args) {
         Scanner id = new Scanner(System.in);
         System.out.println("Ввведите первое целое число");
