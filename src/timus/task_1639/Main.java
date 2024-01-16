@@ -13,7 +13,7 @@ public class Main {
 
         int result = (m * n) % 2;
 
-        out.println((result != 0) ? ("[second]=:]"): ("[:=[first]"));
+        out.println((result != 0) ? ("[second]=:]") : ("[:=[first]"));
         out.flush();
     }
 }

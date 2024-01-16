@@ -9,6 +9,7 @@ public class URL {
     public InputStream openStream() {
 
         return null;
-    }}
+    }
+}
 
 

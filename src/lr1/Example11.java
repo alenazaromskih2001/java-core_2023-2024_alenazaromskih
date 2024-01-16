@@ -2,6 +2,7 @@ package lr1;
 
 import java.util.Scanner;
 
+/*Напишите программу, в которой Пользователь вводит имя и год рождения, в программа отображает сообщение содержащее имя пользователя и его возраст.*/
 public class Example11 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -13,10 +14,8 @@ public class Example11 {
         int num = in.nextInt();
 
 
-
-
         int number = 2023 - num;
 
-        System.out.println("Здравствуйте, " +  name + "! В свои " + number + " года вы выглядите прекрасно!");
+        System.out.println("Здравствуйте, " + name + "! В свои " + number + " года вы выглядите прекрасно!");
     }
 }

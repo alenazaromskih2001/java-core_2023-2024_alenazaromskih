@@ -1,11 +1,11 @@
 package lr7.Task5;
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
         First SuperClassTest1 = new First("hello");
         SuperClassTest1.PrintToString();
 
-       Second SubClassTest1 = new Second("world", 55);
+        Second SubClassTest1 = new Second("world", 55);
         SubClassTest1.PrintToString();
 
         Third SubClassTest2 = new Third("!!!", 'A');

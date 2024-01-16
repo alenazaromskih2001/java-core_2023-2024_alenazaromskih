@@ -15,20 +15,20 @@ public class Example5 {
         int a = 5;
         int b = 3;
         int[][] firstArray = new int[a][b];
-        for (int i = 0 ; i <a; i++) {
-            for (int j = 0 ; j <b; j++) {
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
                 firstArray[i][j] = random.nextInt(200);
                 ;
-                System.out.println("i = "+i+"; j= "+j+"; value= "+firstArray[i][j]);
+                System.out.println("i = " + i + "; j= " + j + "; value= " + firstArray[i][j]);
             }
         }
         System.out.println("Массив 5 строк и 3 столбца.");
 
         int[][] secondArray = new int[b][a];
-        for (int i = 0 ; i <b; i++) {
-            for (int j = 0 ; j <a; j++) {
+        for (int i = 0; i < b; i++) {
+            for (int j = 0; j < a; j++) {
                 secondArray[i][j] = firstArray[j][i];
-                System.out.println("i = "+i+";j= "+j+";value= "+secondArray[i][j]);
+                System.out.println("i = " + i + ";j= " + j + ";value= " + secondArray[i][j]);
             }
         }
     }

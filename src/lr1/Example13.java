@@ -2,6 +2,7 @@ package lr1;
 
 import java.util.Scanner;
 
+/*Напишите программу для вычисления суммы двух чисел. Оба числа вводятся пользователем. Для вычисления суммы используйте оператор +.*/
 public class Example13 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -13,6 +14,6 @@ public class Example13 {
 
         int number = num1 + num2;
 
-        System.out.println("При сложении " + num1 +" и " + num2 + " получилось " + number);
+        System.out.println("При сложении " + num1 + " и " + num2 + " получилось " + number);
     }
 }

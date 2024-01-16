@@ -1,11 +1,12 @@
 package lr6;
+
 //. Напишите программу со статическим методом, которому аргументом передается целочисленный массив и целое число.
 // Результатом метод возвращает ссылку на новый массив, который получается из исходного массива (переданного первым аргументом методу),
 // если в нем взять несколько начальных элементов. Количество элементов, которые нужно взять из исходного массива, определяются вторым аргументом метода.
 // Если второй аргумент метода больше длины массива, переданного первым аргументом, то методом создается копия исходного массива и возвращается ссылка на эту копию.
-public class Example6  {
+public class Example6 {
     public static void main(String[] args) {
-        int[] inArray = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
+        int[] inArray = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
         System.out.println("Второй аргумент метода меньше длины массива");
         Example myexample = new Example();
         for (int i = 0; i < myexample.SetArray(inArray, 10).length; i++) {
@@ -19,6 +20,7 @@ public class Example6  {
 
     protected static class Example {
         private static int outArray[];
+
         //статический метод, которому аргументом передается целочисленный массив и целое число.
         private static int[] SetArray(int inArray[], int count) {
 
@@ -33,8 +35,7 @@ public class Example6  {
             return outArray;
         }
 
-        private static void viewArray()
-        {
+        private static void viewArray() {
             for (int i = 0; i < Example.outArray.length; i++) {
                 System.out.println("outArray[" + i + "] = " + outArray[i]);
             }

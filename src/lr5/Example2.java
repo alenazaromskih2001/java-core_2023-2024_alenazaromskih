@@ -6,8 +6,10 @@ package lr5;
 //которого вызывается метод). Например, если полям объекта присвоены
 //значения ‘A’ и ‘D’, то при вызове метода в консольное окно должны
 //выводиться все символы от ‘A’ до ‘D’ включительно.
+
 import java.util.Scanner;
-public class Example2{
+
+public class Example2 {
     public static void main(String[] args) {
         Example_2 myexample = new Example_2();
 
@@ -34,12 +36,12 @@ class Example_2 {
 
         int int1 = ch1;
         int int2 = ch2;
-        if (ch1>ch2) {
+        if (ch1 > ch2) {
             int1 = ch2;
             int2 = ch1;
         }
         int schet = 1;
-        for (int i = int1; i<=int2; i++) {
+        for (int i = int1; i <= int2; i++) {
             System.out.println(schet + " symbol = " + (char) i);
             schet++;
         }

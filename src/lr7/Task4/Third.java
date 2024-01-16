@@ -14,9 +14,10 @@ public class Third extends Second {
     }
 
     Third(char char1, String str1, int int1) {
-        super(char1,str1);
+        super(char1, str1);
         setChar1Str1Int1(super.char1, super.str1, int1);
     }
+
     Third(Third copy) {
         super(copy.char1, copy.str1);
         this.setChar1Str1Int1(copy.char1, copy.str1, copy.int1);
@@ -25,8 +26,9 @@ public class Third extends Second {
     public String toString() {
         String ThirdFieldValue =
                 "\n str 2 = " + this.getInt1();
-        return super.toString()+ThirdFieldValue;
+        return super.toString() + ThirdFieldValue;
     }
+
     public int getInt1() {
         return int1;
     }

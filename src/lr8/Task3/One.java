@@ -2,11 +2,11 @@ package lr8.Task3;
 
 import java.io.*;
 
-public class One  {
+public class One {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = null;
-        PrintWriter out=null;
+        PrintWriter out = null;
         try {
             String letters = "бБвВгГдДжЖзЗйЙкКлЛмМнНпПрРсСтТфФхХцЦчЧшШщЩ";
             br = new BufferedReader(
@@ -24,7 +24,7 @@ public class One  {
                 System.out.print("Строка " + counterLine + ": ");
                 if (stroka.length() != 0) {
                     for (String word : stroka.split(" ")) {
-                        if (letters.contains(word.substring(0, 1))){
+                        if (letters.contains(word.substring(0, 1))) {
                             out.print(word + " ");
                             System.out.print(word + " ");
                             counter++;
@@ -38,8 +38,8 @@ public class One  {
                 out.println();
             }
         } catch (IOException e) {
-            System.out.println("ошибка" + e); }
-        finally{
+            System.out.println("ошибка" + e);
+        } finally {
             br.close();
             out.flush();
             out.close();

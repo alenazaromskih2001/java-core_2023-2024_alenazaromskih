@@ -21,12 +21,12 @@ public class Main {
             int numberOfFriends = 0;
             int numberOfParis = 0;
 
-            while ((readLine = bufferedReader.readLine()) !=null){
-                if(numberOfFriends ==0){
+            while ((readLine = bufferedReader.readLine()) != null) {
+                if (numberOfFriends == 0) {
                     numberOfFriends = Integer.parseInt(readLine);
                     continue;
                 }
-                if (readLine.contains("+")){
+                if (readLine.contains("+")) {
                     numberOfParis++;
                 }
             }
@@ -34,15 +34,15 @@ public class Main {
 
             int guests = (MarshalAndLilly + numberOfFriends + numberOfParis);
 
-            if(guests == 13){
-                result = (guests * 100)+100;
-            }else {
+            if (guests == 13) {
+                result = (guests * 100) + 100;
+            } else {
                 result = guests * 100;
 
             }
             System.out.println(result);
 
-        } catch (IOException exception){
+        } catch (IOException exception) {
             exception.printStackTrace();
         }
     }

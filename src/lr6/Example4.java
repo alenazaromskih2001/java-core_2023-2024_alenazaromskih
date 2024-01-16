@@ -1,4 +1,5 @@
 package lr6;
+
 // Напишите программу, в которой описан статический метод для вычисления двойного факториала числа, переданного аргументом методу.
 // По определению, двойной факториал числа п (обозначается как n!!) — это произведение через одно всех чисел, не больших числа п.
 // То есть n!! = п * (n - 2) * (п - 4)* ... (последний множитель равен 1 для нечетного п и равен 2 для четного n).
@@ -9,11 +10,12 @@ public class Example4 {
         int number = 6;
         System.out.println("Рекурсивный метод");
         int fact = f.fact(number);
-        System.out.println("Вычисление двойного факториала числа "+number+"!! = "+fact);
+        System.out.println("Вычисление двойного факториала числа " + number + "!! = " + fact);
         System.out.println("Метод без рекурсии");
         int fact2 = f.fact2(number);
-        System.out.println("Вычисление двойного факториала числа "+number+"!! = "+fact2);
+        System.out.println("Вычисление двойного факториала числа " + number + "!! = " + fact2);
     }
+
     private static class DoubleFactorial {
         private int fact(int n) {
             //это рекурсивный метод
@@ -30,9 +32,9 @@ public class Example4 {
 
             int result = n;
             int j = n;
-            for(int i=n; i>2;i=i-2){
+            for (int i = n; i > 2; i = i - 2) {
                 System.out.println("*" + j);
-                j=j-2;
+                j = j - 2;
                 result *= j;
             }
             return result;

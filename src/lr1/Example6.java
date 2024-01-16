@@ -1,4 +1,7 @@
 package lr1;
+/*. Напишите программу, в которой Пользователь вводит сначала фамилию, затем имя, затем отчество.
+ После ввода программа выводит сообщение «Hello <фамилия, имя, отчество>».
+ */
 
 import java.util.Scanner;
 
@@ -12,7 +15,7 @@ public class Example6 {
         String secName = in.nextLine();
         System.out.println("Введите отчество:");
         String thName = in.nextLine();
-        System.out.println("Hello" + " " + firstName + " " + secName + " " +  thName + "!");
+        System.out.println("Hello" + " " + firstName + " " + secName + " " + thName + "!");
 
-}
+    }
 }

@@ -1,15 +1,16 @@
 package lr8.Task1.Primer6;
 
 import java.io.*;
+
 ///Чтение из одного файла и запись в другой файл данных посимвольно.
-public class One  {
+public class One {
 
     public static void main(String[] args) throws IOException {
-        Reader in=null; // можно сразу записать FileReader in=null;
-        Writer out=null; // можно сразу записать FileWriter out =null;
+        Reader in = null; // можно сразу записать FileReader in=null;
+        Writer out = null; // можно сразу записать FileWriter out =null;
         try {
             in = new FileReader("E:\\MyFile1.txt"); // файл для чтения
-            out= new FileWriter("E:\\MyFile2.txt", true); // файл для записи
+            out = new FileWriter("E:\\MyFile2.txt", true); // файл для записи
 
 // Данные считываются и записываются побайтно, как и для
 // InputStream/OutputStream
@@ -17,13 +18,14 @@ public class One  {
             while ((oneByte = in.read()) != -1) {
 // out.write((char)oneByte); // запись с уничтожением ранее
 // существующих данных
-                out.append((char)oneByte); // запись с добавлением данных в конец
-                System.out.print((char)oneByte);
+                out.append((char) oneByte); // запись с добавлением данных в конец
+                System.out.print((char) oneByte);
             }
         } catch (IOException e) {
             System.out.println("Ошибка!!!! ");
-        }
-        finally{
+        } finally {
             in.close();
             out.close();
-        } }}
+        }
+    }
+}

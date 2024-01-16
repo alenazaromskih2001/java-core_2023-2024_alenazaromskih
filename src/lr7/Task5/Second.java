@@ -21,10 +21,11 @@ public class Second extends First {
     @Override
     public void PrintToString() {
         String SecondFieldValue =
-                " int1 = \"" + this.getInt1()+"\"";
+                " int1 = \"" + this.getInt1() + "\"";
         super.PrintToString();
         System.out.println(SecondFieldValue);
     }
+
     public int getInt1() {
         return int1;
     }

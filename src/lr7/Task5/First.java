@@ -8,7 +8,7 @@ public class First {
         this.str1 = str1;
     }
 
-    First(String str1){
+    First(String str1) {
         this.setStr1(str1);
     }
 
@@ -16,9 +16,10 @@ public class First {
         String ClassNameAndFieldValue;
         ClassNameAndFieldValue =
                 "\n Class name: " + this.getClass().getSimpleName() + "\n" +
-                        " String 1 = \"" + this.getStr1()+"\"";
+                        " String 1 = \"" + this.getStr1() + "\"";
         System.out.println(ClassNameAndFieldValue);
     }
+
     public String getStr1() {
         return str1;
     }

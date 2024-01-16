@@ -8,7 +8,7 @@ public class First {
         this.int1 = int1;
     } //метод с одним параметром для присваивания значения полю
 
-    First (int int1){//конструктор с одним параметром
+    First(int int1) {//конструктор с одним параметром
         this.setInt1(int1);
     }
     //Для каждого класса определите метод toString () так, чтобы он возвращал строку с названием класса и значениями всех полей объекта.
@@ -20,6 +20,7 @@ public class First {
                         " int 1 = " + this.getInt1();
         return ClassNameAndFieldValue;
     }
+
     public int getInt1() {
         return int1;
     }

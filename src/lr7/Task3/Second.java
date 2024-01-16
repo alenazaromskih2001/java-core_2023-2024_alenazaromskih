@@ -1,16 +1,19 @@
 package lr7.Task3;
 
-public class Second extends First{
+public class Second extends First {
     Second(int int1) {
         super(int1);
     }
+
     //Во втором классе появляется открытое символьное поле
     public char char1;
+
     //метод с двумя параметрами для присваивания значения полям (перегрузка метода из суперкласса)
     public void setInt1Str1(int int1, char char1) {
         super.int1 = int1;
         this.char1 = char1;
     }
+
     //конструктор с двумя параметрами
     Second(int int1, char char1) {
         super(int1);
@@ -21,8 +24,9 @@ public class Second extends First{
     public String toString() {
         String SecondFieldValue =
                 "\n str 1 = " + this.getChar1();
-        return super.toString()+SecondFieldValue;
+        return super.toString() + SecondFieldValue;
     }
+
     public char getChar1() {
         return char1;
     }

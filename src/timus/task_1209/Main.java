@@ -12,10 +12,12 @@ public class Main {
             long x = in.nextLong() - 1;
             long y = (long) Math.sqrt(8 * x + 1);
 
-            if(y*y == (8 *x+1)){
-                System.out.println("1");;
-            }else {
-                System.out.println("0");;
+            if (y * y == (8 * x + 1)) {
+                System.out.println("1");
+                ;
+            } else {
+                System.out.println("0");
+                ;
 
             }
         }

@@ -1,4 +1,5 @@
 package timus.task_1880;
+
 import javax.imageio.IIOException;
 import java.io.*;
 import java.util.Arrays;
@@ -21,16 +22,16 @@ public class Main {
         int size3 = Integer.parseInt(bufferedReader.readLine());
         String[] strings3 = bufferedReader.readLine().split(" ");
 
-        int allsize = size1+size2+size3;
+        int allsize = size1 + size2 + size3;
 
         String[] strings = new String[allsize];
 
-        for (int i = 0, x = 0, y = 0; i < allsize; i++ ){
-            if(i < size1){
+        for (int i = 0, x = 0, y = 0; i < allsize; i++) {
+            if (i < size1) {
                 strings[i] = strings1[i];
                 continue;
             }
-            if(i < (size1 +size2)){
+            if (i < (size1 + size2)) {
                 strings[i] = strings2[x];
                 x++;
                 continue;
@@ -40,12 +41,12 @@ public class Main {
         }
         Arrays.sort(strings);
         int count = 0;
-         for(int i = 1; i < strings.length - 1; i++){
-             if(strings[i-1].equals(strings[i]) && strings[i].equals(strings[i+1])){
-                 count++;
+        for (int i = 1; i < strings.length - 1; i++) {
+            if (strings[i - 1].equals(strings[i]) && strings[i].equals(strings[i + 1])) {
+                count++;
 
-             }
-             System.out.println(count);
-         }
+            }
+            System.out.println(count);
+        }
     }
 }

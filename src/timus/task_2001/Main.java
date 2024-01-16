@@ -1,6 +1,8 @@
 package timus.task_2001;
+
 import java.util.Scanner;
-public class Main{
+
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int a1 = in.nextInt();
@@ -10,11 +12,11 @@ public class Main{
         int a3 = in.nextInt();
         int b3 = in.nextInt();
 
-int berries2 = b1 - b2;
-int berries1 = b3 - berries2 - b2;
+        int berries2 = b1 - b2;
+        int berries1 = b3 - berries2 - b2;
 
 
-            System.out.println(berries1 + "" + berries2);
+        System.out.println(berries1 + "" + berries2);
 
     }
 }

@@ -1,4 +1,5 @@
 package lr5;
+
 ///Напишите программу с классом, у которого есть закрытое целочисленное поле.
 //Значение полю присваивается с помощью открытого метода.
 //Методу аргументом может передаваться целое число, а также метод может вызываться без аргументов.
@@ -7,30 +8,31 @@ package lr5;
 //Однако если переданное аргументом методу значение превышает 100, то значением полю присваивается число 100.
 //Предусмотрите в классе конструктор, который работает по тому же принципу что и метод для присваивания значения полю.
 //Также в классе должен быть метод, позволяющий проверить значение поля.
-public class Example5  {
+public class Example5 {
     public static void main(String[] args) {
 
         Example_5 myexample = new Example_5(21);
-        System.out.println("Число = "+myexample.PrintInt());
+        System.out.println("Число = " + myexample.PrintInt());
 
 
         myexample.Set(15);
-        System.out.println("Число = "+myexample.PrintInt());
+        System.out.println("Число = " + myexample.PrintInt());
 
 
         myexample.Set(125);
-        System.out.println("Число = "+myexample.PrintInt());
+        System.out.println("Число = " + myexample.PrintInt());
 
 
         myexample.Set(-15);
-        System.out.println("Число = "+myexample.PrintInt());
+        System.out.println("Число = " + myexample.PrintInt());
 
 
         myexample.Set();
-        System.out.println("Число = "+myexample.PrintInt());
+        System.out.println("Число = " + myexample.PrintInt());
     }
 }
-class Example_5{
+
+class Example_5 {
 
     private int int1;
 
@@ -38,11 +40,11 @@ class Example_5{
         System.out.println("Метод Set() c аргументом");
         int1 = n;
 
-        if (n >= 100){
+        if (n >= 100) {
             int1 = 100;
         }
 
-        if (n<=0){
+        if (n <= 0) {
             int1 = 0;
         }
     }
@@ -56,7 +58,7 @@ class Example_5{
         return int1;
     }
 
-    Example_5(int int1){
+    Example_5(int int1) {
         System.out.println("Example_05() конструктор");
         this.Set(int1);
     }

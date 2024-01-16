@@ -1,4 +1,5 @@
 package lr6;
+
 //Напишите программу со статическим методом, аргументом которому передается одномерный символьный массив.
 // В результате вызова метода элементы массива попарно меняются местами: первый — с последним, второй — с предпоследним и так далее.
 public class Example9 {
@@ -17,12 +18,12 @@ public class Example9 {
         //статический методом, аргументом которому передастся символьный массив
         private static char[] RCharArray(char ChArray[]) {
             char changeChar;
-            int l = ChArray.length-1;
+            int l = ChArray.length - 1;
             reverseCharArray = new char[ChArray.length];
             for (int i = 0; i < ChArray.length; i++) {
                 changeChar = ChArray[i];
-                reverseCharArray[i] = ChArray[l-i];
-                reverseCharArray[l-i] = changeChar;
+                reverseCharArray[i] = ChArray[l - i];
+                reverseCharArray[l - i] = changeChar;
             }
             return reverseCharArray;
         }

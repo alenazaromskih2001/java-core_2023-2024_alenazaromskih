@@ -17,24 +17,25 @@ public class Main {
             int[][] ints = new int[size][size];
             String readLine = "";
             for (int i = 0; ((readLine = bufferedReader.readLine()) != null); i++) {
-            String[] strings = readLine.split("");
-            for (int j = 0; j <size; j++){
-                ints[i][j] = Integer.parseInt(strings[j]);
+                String[] strings = readLine.split("");
+                for (int j = 0; j < size; j++) {
+                    ints[i][j] = Integer.parseInt(strings[j]);
 
-            }
-            }
-            for (int i = 0; i <size; i++) {
-                for (int j = i; j >= 0; j--){
-                    System.out.println(ints[j][i-j] + " ");
                 }
             }
-            for (int i = 1; i <size; i++) {
-                for (int j = size - 1; j >= i; j--){
-                    System.out.println(ints[j][size - j + i -1] + " ");
+            for (int i = 0; i < size; i++) {
+                for (int j = i; j >= 0; j--) {
+                    System.out.println(ints[j][i - j] + " ");
+                }
+            }
+            for (int i = 1; i < size; i++) {
+                for (int j = size - 1; j >= i; j--) {
+                    System.out.println(ints[j][size - j + i - 1] + " ");
                 }
             }
 
-        }catch(IIOException | FileNotFoundException e){
-        e.printStackTrace();
+        } catch (IIOException | FileNotFoundException e) {
+            e.printStackTrace();
         }
-    }}
+    }
+}

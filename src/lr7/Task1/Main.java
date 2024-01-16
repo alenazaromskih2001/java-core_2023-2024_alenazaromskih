@@ -1,6 +1,6 @@
 package lr7.Task1;
 
-public class Main  {
+public class Main {
     public static void main(String[] args) {
         SuperClassTest superClassObject = new SuperClassTest("передал в конструктор суперкласса");
         String className = superClassObject.toString();

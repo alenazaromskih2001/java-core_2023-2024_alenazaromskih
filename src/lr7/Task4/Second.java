@@ -1,6 +1,6 @@
 package lr7.Task4;
 
- //на основе суперкласса создается подкласс
+//на основе суперкласса создается подкласс
 public class Second extends First {
     Second(char char1) {
         super(char1);
@@ -27,8 +27,9 @@ public class Second extends First {
     public String toString() {
         String SecondFieldValue =
                 "\n str 1 = " + this.getStr1();
-        return super.toString()+SecondFieldValue;
+        return super.toString() + SecondFieldValue;
     }
+
     public String getStr1() {
         return str1;
     }

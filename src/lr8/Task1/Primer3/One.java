@@ -13,8 +13,8 @@ public class One {
         byte[] buff = new byte[5];
         while (true) {
             int count = in.read(buff);
-            if(count != -1){
-                System.out.println("количество ="+count+", buff="+ Arrays.toString(buff)+", str = "+ new String(buff,0,count,"cp1251"));//UTF8
+            if (count != -1) {
+                System.out.println("количество =" + count + ", buff=" + Arrays.toString(buff) + ", str = " + new String(buff, 0, count, "cp1251"));//UTF8
                 //(buff,0,count,"cp1251")) - данные буфера преобразовываются в строку
             } else {
                 break;
@@ -22,20 +22,20 @@ public class One {
         }
     }
 
-    public static void main(String[] args) throws  IOException {
+    public static void main(String[] args) throws IOException {
         String fileName = "E:\\MyFile1.txt";
         InputStream inFile = null;// переменная объявляется до секции try, чтобы не ограничивать область видимости
         try {
-            inFile= new FileInputStream(fileName);
+            inFile = new FileInputStream(fileName);
             readAllByArray(inFile);
         } catch (IOException e) {
             System.out.println("Ошибка открытия- закрытия файла " + fileName + e);
 
-        }finally { //корректное закрытие потока
-            if(inFile != null){
+        } finally { //корректное закрытие потока
+            if (inFile != null) {
                 try {
                     inFile.close();
-                } catch (IOException ignore){
+                } catch (IOException ignore) {
                     /*NOP*/ //No Operation - ничего не делать
                 }
             }

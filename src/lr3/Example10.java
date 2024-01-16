@@ -1,8 +1,13 @@
 package lr3;
+
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Collections;
+
+/*Напишите программу, в которой создается целочисленный
+массив, заполняется случайными числами и после этого значения элементов в
+массиве сортируются в порядке убывания значений.*/
 public class Example10 {
     public static void main(String[] args) {
         Scanner id = new Scanner(System.in);

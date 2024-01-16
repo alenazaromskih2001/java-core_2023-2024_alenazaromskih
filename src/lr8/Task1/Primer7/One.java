@@ -14,14 +14,14 @@ public class One {
             int lineCount = 0;
             String s;
 
-            while ((s= br.readLine()) !=null){
+            while ((s = br.readLine()) != null) {
                 lineCount++;
-                System.out.println(lineCount + ":"+s);
+                System.out.println(lineCount + ":" + s);
                 out.write(s);
                 out.newLine();
             }
 
-        }catch(IIOException e){
+        } catch (IIOException e) {
             System.out.println("Ошибка!!!!!");
 
         } catch (FileNotFoundException e) {
