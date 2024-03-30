@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="apache.aries.blueprint.cm" type="repository">
+    <properties maven-id="org.apache.aries.blueprint:org.apache.aries.blueprint.cm:1.3.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/aries/blueprint/org.apache.aries.blueprint.cm/1.3.1/org.apache.aries.blueprint.cm-1.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/aries/blueprint/org.apache.aries.blueprint.api/1.0.0/org.apache.aries.blueprint.api-1.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/aries/blueprint/org.apache.aries.blueprint.core/1.10.0/org.apache.aries.blueprint.core-1.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/aries/quiesce/org.apache.aries.quiesce.api/1.0.0/org.apache.aries.quiesce.api-1.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/aries/proxy/org.apache.aries.proxy.api/1.1.0/org.apache.aries.proxy.api-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
