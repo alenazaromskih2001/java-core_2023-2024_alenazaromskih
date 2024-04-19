@@ -8,7 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jsoup" level="project" />
-    <orderEntry type="library" name="json-simple-1.1.1" level="project" />
     <orderEntry type="library" name="log4j" level="project" />
     <orderEntry type="library" name="apache.aries.blueprint.cm" level="project" />
     <orderEntry type="library" name="nl.bstoi.poiparser.PoiParser" level="project" />
@@ -16,5 +15,13 @@
     <orderEntry type="library" name="apache.logging.log4j.core" level="project" />
     <orderEntry type="library" name="apache.poi" level="project" />
     <orderEntry type="library" name="apache.poi.ooxml" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
+    <orderEntry type="library" name="javax.activation" level="project" />
+    <orderEntry type="library" name="sun.mail.imap" level="project" />
+    <orderEntry type="library" name="smtp-1.4.4" level="project" />
+    <orderEntry type="library" name="json-simple-1.1.1 (1)" level="project" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="e01d1c5c-a726-4e0b-ac8a-0498aa690200" />
   </component>
 </module>

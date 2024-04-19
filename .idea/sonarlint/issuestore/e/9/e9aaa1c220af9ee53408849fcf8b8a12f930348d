@@ -1,0 +1,17 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó¯¥ê
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(°§¤Èûÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(–Â¦¼úÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(×ã¬•
+@	java:S106"+Replace this use of System.out by a logger.(²šÄØ
+E	java:S106"+Replace this use of System.out by a logger.(ˆ¯ñ…ıÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ËÜôşÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÄàÛ¹ÿÿÿÿÿ
+7
+java:S1116"Remove this empty statement.(ÄàÛ¹ÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(¥¯¶
+E	java:S106"+Replace this use of System.out by a logger.(–Â¦¼úÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Ìà…
+?	java:S1062"+Replace this use of System.out by a logger.(‚®"

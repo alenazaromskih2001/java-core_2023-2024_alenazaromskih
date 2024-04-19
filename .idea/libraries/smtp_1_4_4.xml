@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="json-simple-1.1.1">
+  <library name="smtp-1.4.4">
     <CLASSES>
-      <root url="jar://D:/json-simple-1.1.1.jar!/" />
+      <root url="jar://D:/smtp-1.4.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
